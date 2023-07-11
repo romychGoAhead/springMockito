@@ -55,7 +55,7 @@ public class DepartmentServiceTest {
 
     @Test
     void getAllByDepartment() {
-        List<Employee> actual = departmentService.getALL(3);
+        List<Employee> actual = departmentService.getAll(3);
         Collection<Employee> excpected = Collections.singletonList(new Employee("andrey",
                 "ivanov", 3, 40000));
         assertIterableEquals(excpected, actual);

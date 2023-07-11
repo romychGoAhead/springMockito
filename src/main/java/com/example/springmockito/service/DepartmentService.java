@@ -39,7 +39,7 @@ public class DepartmentService {
                 .orElseThrow(EmployeeNotFoundException::new);
     }
 
-    public List<Employee> getALL(int department) {
+    public List<Employee> getAll(int department) {
         return employeeService.getAll().stream()
                 .filter(employee -> employee.getDepartment() == department)
                 .collect(Collectors.toList());
