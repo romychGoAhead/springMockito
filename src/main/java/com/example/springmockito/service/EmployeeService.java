@@ -16,7 +16,7 @@ public class EmployeeService {
     private static final int SIZE_LIMIT = 5; // константа мах колл чел.
     private final Map<String, Employee> employees = new HashMap<>(SIZE_LIMIT);
 
-    public EmployeeService() {
+   public void EmployeeService() {
        // Employee employee1 = new Employee("ivan", "ivanov", 1, 10000);
        // Employee employee2 = new Employee("oleg", "olegov", 1, 20000);
        // Employee employee3 = new Employee("nastya", "novikova", 2, 15000);
@@ -26,7 +26,7 @@ public class EmployeeService {
        // employees.put(createKey(employee3), employee3);
        // employees.put(createKey(employee4), employee4);
 
-    }
+   }
 
     public Collection<Employee> getAll() {
         return employees.values();
